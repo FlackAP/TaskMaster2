@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066E351118E4E44100A31058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066E351018E4E44100A31058 /* Foundation.framework */; };
+		066E351318E4E44100A31058 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066E351218E4E44100A31058 /* CoreGraphics.framework */; };
+		066E351518E4E44100A31058 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066E351418E4E44100A31058 /* UIKit.framework */; };
+		066E351B18E4E44100A31058 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066E351918E4E44100A31058 /* InfoPlist.strings */; };
+		066E351D18E4E44100A31058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E351C18E4E44100A31058 /* main.m */; };
+		066E352118E4E44100A31058 /* APFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E352018E4E44100A31058 /* APFAppDelegate.m */; };
+		066E352418E4E44100A31058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 066E352218E4E44100A31058 /* Main.storyboard */; };
+		066E352718E4E44100A31058 /* APFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E352618E4E44100A31058 /* APFViewController.m */; };
+		066E352918E4E44100A31058 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 066E352818E4E44100A31058 /* Images.xcassets */; };
+		066E353018E4E44100A31058 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066E352F18E4E44100A31058 /* XCTest.framework */; };
+		066E353118E4E44100A31058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066E351018E4E44100A31058 /* Foundation.framework */; };
+		066E353218E4E44100A31058 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066E351418E4E44100A31058 /* UIKit.framework */; };
+		066E353A18E4E44100A31058 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066E353818E4E44100A31058 /* InfoPlist.strings */; };
+		066E353C18E4E44100A31058 /* TaskMaster2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E353B18E4E44100A31058 /* TaskMaster2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		066E353318E4E44100A31058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 066E350518E4E44100A31058 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 066E350C18E4E44100A31058;
+			remoteInfo = TaskMaster2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		066E350D18E4E44100A31058 /* TaskMaster2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskMaster2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		066E351018E4E44100A31058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		066E351218E4E44100A31058 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		066E351418E4E44100A31058 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		066E351818E4E44100A31058 /* TaskMaster2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaskMaster2-Info.plist"; sourceTree = "<group>"; };
+		066E351A18E4E44100A31058 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		066E351C18E4E44100A31058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		066E351E18E4E44100A31058 /* TaskMaster2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskMaster2-Prefix.pch"; sourceTree = "<group>"; };
+		066E351F18E4E44100A31058 /* APFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APFAppDelegate.h; sourceTree = "<group>"; };
+		066E352018E4E44100A31058 /* APFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APFAppDelegate.m; sourceTree = "<group>"; };
+		066E352318E4E44100A31058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		066E352518E4E44100A31058 /* APFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APFViewController.h; sourceTree = "<group>"; };
+		066E352618E4E44100A31058 /* APFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APFViewController.m; sourceTree = "<group>"; };
+		066E352818E4E44100A31058 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		066E352E18E4E44100A31058 /* TaskMaster2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskMaster2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		066E352F18E4E44100A31058 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		066E353718E4E44100A31058 /* TaskMaster2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaskMaster2Tests-Info.plist"; sourceTree = "<group>"; };
+		066E353918E4E44100A31058 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		066E353B18E4E44100A31058 /* TaskMaster2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskMaster2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		066E350A18E4E44100A31058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066E351318E4E44100A31058 /* CoreGraphics.framework in Frameworks */,
+				066E351518E4E44100A31058 /* UIKit.framework in Frameworks */,
+				066E351118E4E44100A31058 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		066E352B18E4E44100A31058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066E353018E4E44100A31058 /* XCTest.framework in Frameworks */,
+				066E353218E4E44100A31058 /* UIKit.framework in Frameworks */,
+				066E353118E4E44100A31058 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066E350418E4E44100A31058 = {
+			isa = PBXGroup;
+			children = (
+				066E351618E4E44100A31058 /* TaskMaster2 */,
+				066E353518E4E44100A31058 /* TaskMaster2Tests */,
+				066E350F18E4E44100A31058 /* Frameworks */,
+				066E350E18E4E44100A31058 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		066E350E18E4E44100A31058 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				066E350D18E4E44100A31058 /* TaskMaster2.app */,
+				066E352E18E4E44100A31058 /* TaskMaster2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		066E350F18E4E44100A31058 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				066E351018E4E44100A31058 /* Foundation.framework */,
+				066E351218E4E44100A31058 /* CoreGraphics.framework */,
+				066E351418E4E44100A31058 /* UIKit.framework */,
+				066E352F18E4E44100A31058 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		066E351618E4E44100A31058 /* TaskMaster2 */ = {
+			isa = PBXGroup;
+			children = (
+				066E351F18E4E44100A31058 /* APFAppDelegate.h */,
+				066E352018E4E44100A31058 /* APFAppDelegate.m */,
+				066E352218E4E44100A31058 /* Main.storyboard */,
+				066E352518E4E44100A31058 /* APFViewController.h */,
+				066E352618E4E44100A31058 /* APFViewController.m */,
+				066E352818E4E44100A31058 /* Images.xcassets */,
+				066E351718E4E44100A31058 /* Supporting Files */,
+			);
+			path = TaskMaster2;
+			sourceTree = "<group>";
+		};
+		066E351718E4E44100A31058 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				066E351818E4E44100A31058 /* TaskMaster2-Info.plist */,
+				066E351918E4E44100A31058 /* InfoPlist.strings */,
+				066E351C18E4E44100A31058 /* main.m */,
+				066E351E18E4E44100A31058 /* TaskMaster2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		066E353518E4E44100A31058 /* TaskMaster2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				066E353B18E4E44100A31058 /* TaskMaster2Tests.m */,
+				066E353618E4E44100A31058 /* Supporting Files */,
+			);
+			path = TaskMaster2Tests;
+			sourceTree = "<group>";
+		};
+		066E353618E4E44100A31058 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				066E353718E4E44100A31058 /* TaskMaster2Tests-Info.plist */,
+				066E353818E4E44100A31058 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		066E350C18E4E44100A31058 /* TaskMaster2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 066E353F18E4E44100A31058 /* Build configuration list for PBXNativeTarget "TaskMaster2" */;
+			buildPhases = (
+				066E350918E4E44100A31058 /* Sources */,
+				066E350A18E4E44100A31058 /* Frameworks */,
+				066E350B18E4E44100A31058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskMaster2;
+			productName = TaskMaster2;
+			productReference = 066E350D18E4E44100A31058 /* TaskMaster2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		066E352D18E4E44100A31058 /* TaskMaster2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 066E354218E4E44100A31058 /* Build configuration list for PBXNativeTarget "TaskMaster2Tests" */;
+			buildPhases = (
+				066E352A18E4E44100A31058 /* Sources */,
+				066E352B18E4E44100A31058 /* Frameworks */,
+				066E352C18E4E44100A31058 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				066E353418E4E44100A31058 /* PBXTargetDependency */,
+			);
+			name = TaskMaster2Tests;
+			productName = TaskMaster2Tests;
+			productReference = 066E352E18E4E44100A31058 /* TaskMaster2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		066E350518E4E44100A31058 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = APF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Flack AP";
+				TargetAttributes = {
+					066E352D18E4E44100A31058 = {
+						TestTargetID = 066E350C18E4E44100A31058;
+					};
+				};
+			};
+			buildConfigurationList = 066E350818E4E44100A31058 /* Build configuration list for PBXProject "TaskMaster2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 066E350418E4E44100A31058;
+			productRefGroup = 066E350E18E4E44100A31058 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				066E350C18E4E44100A31058 /* TaskMaster2 */,
+				066E352D18E4E44100A31058 /* TaskMaster2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		066E350B18E4E44100A31058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066E352918E4E44100A31058 /* Images.xcassets in Resources */,
+				066E351B18E4E44100A31058 /* InfoPlist.strings in Resources */,
+				066E352418E4E44100A31058 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		066E352C18E4E44100A31058 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066E353A18E4E44100A31058 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		066E350918E4E44100A31058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066E352718E4E44100A31058 /* APFViewController.m in Sources */,
+				066E352118E4E44100A31058 /* APFAppDelegate.m in Sources */,
+				066E351D18E4E44100A31058 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		066E352A18E4E44100A31058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066E353C18E4E44100A31058 /* TaskMaster2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		066E353418E4E44100A31058 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 066E350C18E4E44100A31058 /* TaskMaster2 */;
+			targetProxy = 066E353318E4E44100A31058 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		066E351918E4E44100A31058 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				066E351A18E4E44100A31058 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		066E352218E4E44100A31058 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				066E352318E4E44100A31058 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		066E353818E4E44100A31058 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				066E353918E4E44100A31058 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		066E353D18E4E44100A31058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		066E353E18E4E44100A31058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		066E354018E4E44100A31058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskMaster2/TaskMaster2-Prefix.pch";
+				INFOPLIST_FILE = "TaskMaster2/TaskMaster2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		066E354118E4E44100A31058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskMaster2/TaskMaster2-Prefix.pch";
+				INFOPLIST_FILE = "TaskMaster2/TaskMaster2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		066E354318E4E44100A31058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TaskMaster2.app/TaskMaster2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskMaster2/TaskMaster2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TaskMaster2Tests/TaskMaster2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		066E354418E4E44100A31058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TaskMaster2.app/TaskMaster2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TaskMaster2/TaskMaster2-Prefix.pch";
+				INFOPLIST_FILE = "TaskMaster2Tests/TaskMaster2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		066E350818E4E44100A31058 /* Build configuration list for PBXProject "TaskMaster2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066E353D18E4E44100A31058 /* Debug */,
+				066E353E18E4E44100A31058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		066E353F18E4E44100A31058 /* Build configuration list for PBXNativeTarget "TaskMaster2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066E354018E4E44100A31058 /* Debug */,
+				066E354118E4E44100A31058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		066E354218E4E44100A31058 /* Build configuration list for PBXNativeTarget "TaskMaster2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066E354318E4E44100A31058 /* Debug */,
+				066E354418E4E44100A31058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 066E350518E4E44100A31058 /* Project object */;
+}
