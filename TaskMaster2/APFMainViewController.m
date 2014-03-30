@@ -48,6 +48,27 @@
     return 5;
 }
 
+- (void)configureCheckmarkForCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    BOOL isChecked = NO;
+    
+    if (indexPath.row == 0) {
+        isChecked = _row0checked;
+    } else if (indexPath.row == 1) {
+        isChecked = _row1checked;
+    } else if (indexPath.row == 2) {
+        isChecked = _row2checked;
+    } else if (indexPath.row == 3) {
+        isChecked = _row3checked;
+    } else if (indexPath.row == 4) {
+        isChecked = _row4checked;
+    }
+    if (isChecked) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChecklistItem"];
@@ -65,6 +86,7 @@
         label.text = _row4text;
     }
     
+    [self configureCheckmarkForCell:cell atIndexPath:indexPath];
     return cell;
 }
 
