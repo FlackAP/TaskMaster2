@@ -21,6 +21,7 @@
 		066E353218E4E44100A31058 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066E351418E4E44100A31058 /* UIKit.framework */; };
 		066E353A18E4E44100A31058 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066E353818E4E44100A31058 /* InfoPlist.strings */; };
 		066E353C18E4E44100A31058 /* TaskMaster2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E353B18E4E44100A31058 /* TaskMaster2Tests.m */; };
+		066E354718E9985E00A31058 /* CheckListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E354618E9985E00A31058 /* CheckListItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		066E353718E4E44100A31058 /* TaskMaster2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaskMaster2Tests-Info.plist"; sourceTree = "<group>"; };
 		066E353918E4E44100A31058 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		066E353B18E4E44100A31058 /* TaskMaster2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskMaster2Tests.m; sourceTree = "<group>"; };
+		066E354518E9985E00A31058 /* CheckListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListItem.h; sourceTree = "<group>"; };
+		066E354618E9985E00A31058 /* CheckListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				066E352618E4E44100A31058 /* APFMainViewController.m */,
 				066E352818E4E44100A31058 /* Images.xcassets */,
 				066E351718E4E44100A31058 /* Supporting Files */,
+				066E354518E9985E00A31058 /* CheckListItem.h */,
+				066E354618E9985E00A31058 /* CheckListItem.m */,
 			);
 			path = TaskMaster2;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				066E352718E4E44100A31058 /* APFMainViewController.m in Sources */,
 				066E352118E4E44100A31058 /* APFAppDelegate.m in Sources */,
 				066E351D18E4E44100A31058 /* main.m in Sources */,
+				066E354718E9985E00A31058 /* CheckListItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
