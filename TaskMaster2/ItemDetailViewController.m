@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Flack AP. All rights reserved.
 //
 
-#import "AddItemViewController.h"
+#import "ItemDetailViewController.h"
 #import "ChecklistItem.h"
 
-@interface AddItemViewController ()
+@interface ItemDetailViewController ()
 
 @end
 
-@implementation AddItemViewController
+@implementation ItemDetailViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -24,38 +24,39 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if (self.itemToEdit != nil) {
+        self.title = @"Edit Item";
+        self.textField.text = self.itemToEdit.text;
+        self.doneBarButton.enabled = YES;
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)cancel
-{
+- (IBAction)cancel {
     [self.delegate addItemViewControllerDidCancel:self];
 }
 
 - (IBAction)done
 {
-    CheckListItem *item = [[CheckListItem alloc] init];
-    item.text = self.textField.text;
-    item.checked = NO;
-    [self.delegate addItemViewController:self didFinishAddingItem:item];
+    if (self.itemToEdit == nil) {
+        CheckListItem *item = [[CheckListItem alloc] init];
+        item.text = self.textField.text;
+        item.checked = NO;
+        [self.delegate addItemViewController:self
+                         didFinishAddingItem:item];
+    } else {
+        self.itemToEdit.text = self.textField.text;
+        [self.delegate addItemViewController:self didFinishEditingItem:self.itemToEdit];
+    }
 }
 
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     return nil;
 }
 

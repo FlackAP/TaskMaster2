@@ -8,21 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@class AddItemViewController;
+@class ItemDetailViewController;
 @class CheckListItem;
 
 @protocol AddItemViewControllerDelegate <NSObject>
 
-- (void)addItemViewControllerDidCancel: (AddItemViewController *)controller;
+- (void)addItemViewControllerDidCancel: (ItemDetailViewController *)controller;
+- (void)addItemViewController: (ItemDetailViewController *)controller didFinishAddingItem:(CheckListItem *)item;
+- (void)addItemViewController: (ItemDetailViewController *)controller didFinishEditingItem:(CheckListItem *)item;
 
-- (void)addItemViewController: (AddItemViewController *)controller didFinishAddingItem:(CheckListItem *)item;
 @end
 
-@interface AddItemViewController : UITableViewController <UITextFieldDelegate>
+@interface ItemDetailViewController : UITableViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneBarButton;
 @property (nonatomic, weak) id <AddItemViewControllerDelegate> delegate;
+@property (nonatomic, strong) CheckListItem *itemToEdit;
 
 - (IBAction)cancel;
 - (IBAction)done;

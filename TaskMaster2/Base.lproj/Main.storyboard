@@ -28,13 +28,16 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="√" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upY-UI-XNN">
-                                            <rect key="frame" x="20" y="13" width="10" height="21"/>
+                                            <rect key="frame" x="20" y="6" width="17" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="uPC-4h-MkX" kind="modal" id="4Aj-CK-rxX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -45,7 +48,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="iYP-0t-uUZ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mC2-5w-wgc">
                             <connections>
-                                <segue destination="uPC-4h-MkX" kind="modal" identifier="AddItem" id="t39-hf-BlG"/>
+                                <segue destination="uPC-4h-MkX" kind="modal" identifier="EditItem" id="t39-hf-BlG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -54,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="609" y="24"/>
         </scene>
-        <!--Add Item View Controller - Add Item-->
+        <!--Item Detail View Controller - Add Item-->
         <scene sceneID="ntB-Sk-zC1">
             <objects>
-                <tableViewController id="KmE-M6-D98" customClass="AddItemViewController" sceneMemberID="viewController">
+                <tableViewController id="KmE-M6-D98" customClass="ItemDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="iib-Pv-ZvH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,4 +159,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="t39-hf-BlG"/>
+    </inferredMetricsTieBreakers>
 </document>

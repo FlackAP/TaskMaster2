@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AddItemViewController.h"
+#import "ItemDetailViewController.h"
 
 @interface APFMainViewController : UITableViewController <AddItemViewControllerDelegate>
 
