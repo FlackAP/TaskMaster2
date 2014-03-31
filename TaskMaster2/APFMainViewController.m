@@ -109,11 +109,16 @@
     item.text = @"I am a new row";
     item.checked = NO;
     [_items addObject:item];
-    NSIndexPath *indexPath = [NSIndexPath
-                              indexPathForRow:newRowIndex inSection:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:newRowIndex inSection:0];
     NSArray *indexPaths = @[indexPath];
-    [self.tableView insertRowsAtIndexPaths:indexPaths
-                          withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+        forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [_items removeObjectAtIndex:indexPath.row];
+    NSArray *indexPaths = @[indexPath];
+    [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 @end
