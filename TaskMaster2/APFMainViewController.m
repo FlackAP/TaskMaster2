@@ -68,12 +68,14 @@
    return [_items count];
 }
 
-- (void)configureCheckmarkForCell:(UITableViewCell *)cell withCheckListItem:(CheckListItem *)item {
-    
+- (void)configureCheckmarkForCell:(UITableViewCell *)cell
+                withCheckListItem:(CheckListItem *)item
+{
+    UILabel *label = (UILabel *)[cell viewWithTag:1001];
     if (item.checked) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        label.text = @"√";
     } else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
+        label.text = @"";
     }
 }
 
