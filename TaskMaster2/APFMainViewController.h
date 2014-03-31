@@ -10,4 +10,6 @@
 
 @interface APFMainViewController : UITableViewController
 
+- (IBAction)addItem;
+
 @end
